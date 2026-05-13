@@ -1,0 +1,15 @@
+npm install
+npm run dev
+stripe listen --forward-to localhost:3000/api/webhook
+npm install @supabase/supabase-js
+npm install @supabase/auth-helpers-nextjs
+
+já existem as tabelas:
+PRODUCTS [id (text), name(text), description(text), price (numeric), category(text), images(text), featured (bool), created_at(text), colleciont(text)]
+
+ORDERS [id(uuid), email(text), total(numeric), products(json), stripe_session_id(text), created_at(timestamp)]
+
+
+
+
+C:\Users\sraze\joias-site\pages\shop\[collection]\index,js
